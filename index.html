@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<!--<link rel="stylesheet" href="css/plp.css" />-->
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		.mui-content{
+			background-image: url(img/bj.png);
+		}
+		.mui-bar-nav{
+			-webkit-box-shadow: none;
+    		box-shadow: none;
+		}
+		options = {
+		 scrollY: false, //是否竖向滚动
+		 scrollX: false, //是否横向滚动
+		 indicators: false, //是否显示滚动条
+		 bounce: false //是否启用回弹
+		}
+	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav" style="color: #fff;background: #00a0e9;z-index: 999;">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #fff;"></a>
+		<h1 class="mui-title" style="color: #fff;font-family:'microsoft yahei';">漂流瓶</h1>
+		<a href="seting.html">
+			<span class="mui-icon mui-icon-mui-icon mui-icon-gear" style="float: right;color: #fff;"></span>
+		</a>
+	</header>
+	<div class="mui-content" style="margin-left: 0;height: 100%;">
+		<!--<img src="img/bj.png" style="width: 100%;height:90%;z-index: 999;"/>-->
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view mui-grid-view" style="margin:0;padding: 0;">
+					<li class="mui-table-view-cell mui-media" style="width:100%;height:100%;margin: 0;padding: 0;">
+							<img class="mui-media-object" src="img/bj.png" style="width: 100%;height: 100%;">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<nav class="mui-bar mui-bar-tab " id="nav"style="background:#00a0e9 ;">   
+        <a  href="Trow.html"  class="mui-tab-item mui-active" id="a1">  
+            <span class="mui-tab-label">   
+                <img src="img/Throw.png" class="Throw"  style="height:60px;width:60px;margin-top: 4px;">
+                	<!--<img src="img/open_bottle.png" class="mui-backdrop" />-->
+            </span> 
+        </a>  
+        <a  href="openbottle.html"  class="mui-tab-item " id="a2">   
+            <span class="mui-tab-label">
+                <img src="img/Get.png" style="height:60px;width:60px;margin-top: 4px;"/>
+            </span>  
+        </a>  
+        <a  href="Mybottle.html"   class="mui-tab-item " id="a3">   
+            <span class="mui-tab-label">
+                <img src="img/My bottle.png" style="height:60px;width:60px;margin-top: 4px;"/>
+            </span>  
+        </a>  
+    </nav>  
+</body>
+<script>
+//	$(".Throw").CLICK({
+//		
+//		var mask = mui.createMask(callback);//callback为用户点击蒙版时自动执行的回调；
+//		mask.show();//显示遮罩
+//		mask.close();//关闭遮罩
+//	})
+	document.getElementById('a1').addEventListener('tap',function(){
+	mui.openWindow({
+	url:'Trow.html',
+	id:'Trow.html'
+	});
+	});
+	
+	document.getElementById('a3').addEventListener('tap',function(){
+	mui.openWindow({
+	url:'Mybottle.html',
+	id:'Mybottle.html'
+	});
+	});
+	
+	document.getElementById('a2').addEventListener('tap',function(){
+	mui.openWindow({
+	url:'openbottle.html',
+	id:'openbottle.html'
+	});
+	});
+</script>
+</html>

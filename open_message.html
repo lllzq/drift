@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<!--<link rel="stylesheet" href="css/plp.css" />-->
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+		.mui-backdrop {
+		    position: fixed;
+		    top: 0px;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    z-index: 998;
+		    background-color: rgba(0,0,0,.3);
+		}
+		.mui-content{
+			background-image: url(img/bj.png);
+		}
+		.mui-bar-nav{
+			-webkit-box-shadow: none;
+    		box-shadow: none;
+		}
+		options = {
+		 scrollY: false, //是否竖向滚动
+		 scrollX: false, //是否横向滚动
+		 indicators: false, //是否显示滚动条
+		 bounce: false //是否启用回弹
+		}
+	</style>
+</head>
+<body>
+	<!--<div class="mui-content" style="margin-left: 0;">
+		<img src="img/bj.png" style="width: 100%;height:90%;"/>
+	</div>  -->
+	<div class="mui-content" style="margin-left: 0;height: 100%;">
+		<!--<img src="img/bj.png" style="width: 100%;height:90%;z-index: 999;"/>-->
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view mui-grid-view" style="margin:0;padding: 0;">
+					<li class="mui-table-view-cell mui-media" style="width:100%;height:100%;margin: 0;padding: 0;">
+							<img class="mui-media-object" src="img/bj.png" style="width: 100%;height: 100%;">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <div class="mui-backdrop">
+		<div class="mui-card-header mui-card-media" style="height: 100%;margin-top:50px;">
+			<img src="img/loding.png"  style="width:90px;height:90px;border: 1px solid #888;border-radius: 50%;margin-left:5%;"/>
+			<div class="mui-media-body" style="font-family: 'microsoft yahei';padding-left: 25%;">
+				<p style="color: #fffefe;font-size: 16px;margin-top:30px;">易班漂流瓶</p>
+				<button type="button" class="mui-btn" style="width: 60px;height: 32px;margin-left: 60%;background: #bbb;border: 1px solid #bbb;margin-top: -40px;">
+					<a href="">关闭</a>
+				</button>
+				<button type="button" class="mui-btn"  style="width: 60px;height: 32px;margin-left: 60%;background: #e60012;border: 1px solid #e60012;margin-top: -5px;">
+					<a href="report.html">举报</a>
+				</button>
+			</div>
+			<div style="width: 83%;height:50%;background: #fff;margin-top: 30px;margin-left:8%;text-align: center;">
+				<textarea  style="color: #5c5c5c;height: 100%;color: #5c5c5c;font-family: 'microsoft yahei';font-size: 16px;border: none;">易班漂流瓶真好玩！</textarea>
+			</div>
+			<button type="button" class="mui-btn" style="height:50px;width:100px;background: #00a0e9;border: 1px solid #00a0e9;margin-top: 80px;margin-left: 10%;">
+				<a href="" style="color: #fffefe;font-size: 18px;">扔回海里</a>
+			</button>
+			<button type="button" class="mui-btn" style="height:50px;width:100px;background: #00a0e9;border: 1px solid #00a0e9;margin-top: 80px;margin-left: 20%;">
+				<a href="" style="color: #fffefe;font-size: 18px;">回应</a>
+			</button>
+		</div>
+	</div>
+</body>
+<script>
+	var mask = mui.createMask(callback);//callback为用户点击蒙版时自动执行的回调；
+		mask.show();//显示遮罩
+		mask.close();//关闭遮罩
+	
+</script>
+</html>

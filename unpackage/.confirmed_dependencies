@@ -1,0 +1,35 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"css/plp.css",
+			"fonts/mui.ttf",
+			"img/bj.png",
+			"img/Throw.png",
+			"img/捞一个.png",
+			"img/Get.png",
+			"img/My bottle.png"
+		],
+		"refer": [
+			"Trow.html",
+			"seting.html",
+			"openbottle.html"
+		]
+	},
+	"seting.html": {
+		"refer": [
+			"Empty_record.html"
+		]
+	},
+	"openbottle.html": {
+		"refer": [
+			"open_message.html"
+		]
+	},
+	"Trow.html": {
+		"refer": [
+			"index.html"
+		]
+	}
+}
