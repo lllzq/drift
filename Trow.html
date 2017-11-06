@@ -37,59 +37,7 @@
 		 indicators: false, //是否显示滚动条
 		 bounce: false //是否启用回弹
 		}
-		
 	
-        #box{
-        	/*display: none;*/
-            position: absolute;
-            left: 50px;
-            background: url("open_bottle.png") no-repeat;
-            height: 200px;
-            width: 200px;
-        }
-        #box{
-        -webkit-animation: rotating .7s linear infinite;
-        -moz-animation: rotating .7s linear infinite;
-            -o-animation: rotating .7s linear infinite;
-            animation: rotating .7s linear infinite;
-        }
-         @-webkit-keyframes rotating {
-           from { 
-           	-webkit-transform: rotate(0);
-           	left:0px;
-           	top:0px;         
-        }
-            to { 
-            	-webkit-transform: rotate(360deg);
-            	left:100px;
-            	top:-270px;
-            }
-      }
-        @keyframes rotating {
-             from {
-             	 transform: rotate(0);
-             	 	left:0px;
-           			top:0px;
-             	 }
-           to {
-           	 transform: rotate(360deg);
-           	 left:100px;
-             top:-270px;
-           	}
-         }
-         @-moz-keyframes rotating {
-           from { 
-           	-moz-transform: rotate(0);
-           	left:0px;
-           	top:0px;
-           	}
-             to { 
-             	-moz-transform: rotate(360deg);
-             	-webkit-transform: scale(-1);
-             	left:100px;
-            	top:-270px;
-             	}
-         }
 	</style>
 </head>
 <body>
@@ -132,8 +80,9 @@
 //			
 //		}
 	mui("#a1").on('tap','.Throw',function(event){
-		mui("#backdrop").close();
-		
+		mui.openWindow({
+					url:'Trow_drift.html'
+				});
 		//返回主页
 //		var code = 1;
 //		mui.ajax("http://192.168.86.60:8888/index",{

@@ -42,4 +42,7 @@ page {
 .img {  
   width: 160rpx;  
   height: 160rpx;  
+}
+#backdrop{
+	display: block;
 }  
